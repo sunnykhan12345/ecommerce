@@ -9,6 +9,7 @@ const Cat = () => {
                     <div className='h-80 bg-blue-500 rounded-md'>first </div>
                     <div className='h-80 bg-pink-500 rounded-md'>first </div>
                     <div className='h-80 bg-orange-500 rounded-md'>first </div>
+                    aur
 
                 </div>
             </div>
