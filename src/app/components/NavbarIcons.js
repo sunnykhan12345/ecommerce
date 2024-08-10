@@ -26,7 +26,7 @@ const NavbarIcons = () => {
             <CgProfile className="h-6 w-6 cursor-pointer" onClick={handleProfile} />
             {
                 isProfileOpen && (
-                    <div className="absolute top-14 z-20 p-4 rounded-md left-0 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <div className="absolute top-14 z-10 p-4 rounded-md left-0 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                         <Link href="/">Profile</Link>
                         <div className="mt-2 cursor-pointer">Logout</div>
                     </div>
