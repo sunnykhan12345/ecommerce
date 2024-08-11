@@ -7,7 +7,7 @@ const CartModel = () => {
 
     const cartItem = true
     return (
-        <div className="w-max absolute top-12 z-20 p-4 bg-white right-0 rounded-md  text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col gap-6 ">
+        <div className="w-max absolute top-12 z-20  p-4 bg-white right-0 rounded-md  text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col gap-6 ">
             {
                 !cartItem ? (
                     <div>Cart is Empty </div>

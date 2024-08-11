@@ -7,7 +7,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 const Navbar = () => {
     return (
         <>
-            <div className='h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-gray-200 rounded-b-md sticky z-10 top-0'>
+            <div className='h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-gray-200 rounded-b-md '>
                 {/* MOBILE */}
                 <div className='h-full flex items-center justify-between md:hidden'>
                     <Link href="/" className='text-2xl tracking-wide'>Sunny</Link>
