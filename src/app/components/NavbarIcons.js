@@ -6,6 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { PiShoppingCartThin } from "react-icons/pi";
 import CartModel from "../components/CartModel"
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 const NavbarIcons = () => {
     const [isProfileOpen, setisProfileOpen] = useState(false)
     const [isCartOpen, setisCartOpen] = useState(false)
@@ -22,13 +23,27 @@ const NavbarIcons = () => {
 
     }
     return (
-        <div className="flex items-center gap-4 xl:gap-6 relative">
-            <CgProfile className="h-6 w-6 cursor-pointer" onClick={handleProfile} />
+        <div className="flex items-center gap-4 xl:gap-6 ">
+
+
+            {/* <CgProfile className="h-6 w-6 cursor-pointer" onClick={handleProfile} /> */}
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
+            <SignedOut>
+                <SignInButton />
+            </SignedOut>
             {
                 isProfileOpen && (
                     <div className="absolute top-14 z-10 p-4 rounded-md left-0 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-                        <Link href="/">Profile</Link>
-                        <div className="mt-2 cursor-pointer">Logout</div>
+                        <SignedIn>
+                            <UserButton />
+                        </SignedIn>
+                        <SignedOut>
+                            <SignInButton />
+                        </SignedOut>
+                        {/* <Link href="/">Profile</Link>
+                        <div className="mt-2 cursor-pointer">Logout</div> */}
                     </div>
                 )
             }

@@ -3,7 +3,7 @@ import Menu from "../components/Menu"
 import Search from "../components/Search"
 import NavbarIcons from "../components/NavbarIcons"
 import { CgShoppingCart } from "react-icons/cg";
-import { IoIosNotificationsOutline } from "react-icons/io";
+
 const Navbar = () => {
     return (
         <>

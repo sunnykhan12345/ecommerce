@@ -31,6 +31,7 @@ const slides = [
         bg: "bg-gradient-to-r from-blue-50 to-yellow-50",
     },
 
+
 ]
 const Slider = () => {
     const [current, setCurrent] = useState(0)
@@ -48,7 +49,7 @@ const Slider = () => {
                                 <h2 className="text-xl lg:text-3xl 2xl:text-5xl">{slide.description}</h2>
                                 <h1 className="text-5xl lg:text-6xl 2xl:text-8xl font-semibold">{slide.title}</h1>
                                 <Link href={slide.url}>
-                                
+
                                     <button>Shop Now</button>
                                 </Link>
                             </div>

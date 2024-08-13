@@ -12,6 +12,8 @@ import visa from "../../../public/images/visa.png"
 import Image from 'next/image';
 
 const Footer = () => {
+
+    
     return (
         <div className='py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-gray-100 mt-24 text-sm'>
             {/* TOP */}
@@ -99,6 +101,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-8 md:flex-row'>
                     <div>
                         <span className='text-gray-500 mr-4'>Language</span>
+                        {/* footer are completed here in now we re workunf  */}
                     </div>
                 </div>
             </div>
